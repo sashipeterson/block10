@@ -1,0 +1,288 @@
+body {
+    background-color: rgb(239, 239, 239);
+    font-family: sans-serif;
+}
+
+.center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 20px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrap {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 20px;
+        font-weight: bold;
+    }
+}
+
+.top1 {
+    background-color: blue;
+    flex: 20%;
+    margin: 1%;
+    padding: 10px;
+    border: 5px solid;
+    text-align: center;
+}
+
+.top2 {
+    background-color: rgb(251, 255, 0);
+    flex: 20%;
+    margin: 1%;
+    padding: 10px;
+    border: 5px solid;
+    text-align: center;
+}
+
+.top3 {
+    background-color: rgb(255, 255, 255);
+    flex: 20%;
+    margin: 1%;
+    padding: 10px;
+    border: 5px solid;
+    text-align: center;
+}
+
+    .canvas {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        border: 5px solid;
+        margin: 20px;
+        flex-wrap: wrap;
+    }
+
+@media screen and (min-width:991px) {
+    .sun {
+        background-color: rgb(225, 255, 0);
+        height: 100px;
+        width: 100px;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .sun {
+        background-color: rgb(225, 255, 0);
+        height: 150px;
+        width: 150px;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sun {
+        background-color: rgb(225, 255, 0);
+        height: 175px;
+        width: 175px;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 20px;
+        position: relative;
+    }
+}
+
+.sky {
+    background-color: rgb(0, 191, 255);
+    height: 400px;
+    flex: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .mountain {
+        position: relative;
+        top: 60px;
+        width: 0;
+        height: 0;
+        border-left: 130px solid transparent;
+        border-right: 130px solid transparent;
+        border-bottom: 130px solid #00b85c;
+        margin-left: 5%;
+        z-index: 3;
+    }
+
+    .mountain2 {}
+
+    .mountain3 {}
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .mountain {
+        position: relative;
+        top: 135px;
+        left: 55px;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 75px solid #00b85c;
+        margin-left: 5%;
+        z-index: 3;
+    }
+
+    .mountain2 {
+        position: relative;
+        top: 60px;
+        left: 140px;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 75px solid #106239;
+        margin-left: 5%;
+        z-index: 2;
+    }
+
+    .mountain3 {
+        position: relative;
+        bottom: 15px;
+        right: 19px;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 75px solid #134c2f;
+        margin-left: 5%;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .mountain {
+        position: relative;
+        top: 210px;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #00b85c;
+        margin-left: 5%;
+        z-index: 3;
+    }
+
+    .mountain2 {
+        position: relative;
+        top: 160px;
+        left: 22px;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #106239;
+        margin-left: 5%;
+        z-index: 2;
+    }
+
+    .mountain3 {
+        position: relative;
+        top: 110px;
+        right: 19px;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #134c2f;
+        margin-left: 5%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grass {
+        height: 100px;
+        flex: 100%;
+        background-color: #00b85c;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .grass {
+        height: 100px;
+        flex: 50%;
+        background-color: #00b85c;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .grass {
+        height: 100px;
+        flex: 30%;
+        background-color: #00b85c;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .sand {
+        flex: 0%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .sand {
+        height: 100px;
+        flex: 30%;
+        background-color: rgb(255, 255, 0);
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .ocean {
+        height: 100px;
+        flex: 30%;
+        background-color: rgb(6, 0, 184);
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .ocean {
+        height: 100px;
+        flex: 50%;
+        background-color: rgb(6, 0, 184);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ocean {
+        display: none;
+    }
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+}
